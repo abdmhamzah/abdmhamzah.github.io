@@ -2,205 +2,338 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link href="assets/css/style.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="build/styles.css" />
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <link rel="icon" href="./assets//img/favicon.ico" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+    <link rel="icon" href="../assets/img/favicon.ico" />
     <title>abdmhamzah</title>
   </head>
   <body>
-    <div class="container">
-      <div class="gallery">
-        <figure class="gallery__item gallery__item--1">
-          <img
-            src="assets/img/hamzah.jpg"
-            alt="Gallery image 6"
-            class="gallery__prof"
-          />
-        </figure>
-        <figure class="gallery__item gallery__item--2">
-          <h1 class="sapa">
-            Hi,
-          </h1>
-        </figure>
-        <figure class="gallery__item gallery__item--3">
-          <p class="caption" font-size="12px">
-            I'm Hamzah, Fullstack Developer who could combine good logical
-            thinking process with good taste of minimalist web design. Highly
-            motivated, honest, strong creativity, responsible, and hard working
-            person either independently or in a team work.
-          </p>
-        </figure>
-        <figure class="gallery__item gallery__item--12">
-          <div class="footer">
-            <p class="pfoot">Skills</p>
-            <div class="icons">
-              <i class="fab fa-js-square icon"></i>
-              <i class="devicon-nodejs-plain icon"></i>
-              <i class="devicon-express-original icon"></i>
-              <i class="devicon-postgresql-plain icon"></i>
-              <i class="devicon-sequelize-plain icon"></i>
-              <i class="devicon-mongodb-plain icon"></i>
-              <i class="devicon-redis-plain icon"></i>
-              <i class="devicon-git-plain icon"></i>
-              <i class="fab fa-html5 icon"></i>
-              <i class="fab fa-css3-alt icon"></i>
-              <i class="fab fa-vuejs icon"></i>
-              <i class="fab fa-react icon"></i>
-              <i class="fab fa-sass icon"></i>
-              <i class="devicon-jquery-plain icon"></i>
-              <i class="devicon-bootstrap-plain icon"></i>
-              <i class="devicon-heroku-original icon"></i>
-              <i class="devicon-illustrator-plain icon"></i>
-            </div>
-          </div>
-        </figure>
-      </div>
-
-
-      <div class="gallery">
-        <figure class="gallery__item gallery__item--4">
-          <div class="center">
-            <h2>Portfolio</h2>
-            <p>
-              This is my recent Projects, please kindly checkout
+    <!-- <div class="m-20">
+      <figure
+        class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800"
+      >
+        <img
+          class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto"
+          src="../assets/img/hamzah.jpg"
+          alt=""
+          width="384"
+          height="512"
+        />
+        <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
+          <blockquote>
+            <p class="text-lg text-white font-medium">
+              “Tailwind CSS is the only framework that I've seen scale on large
+              teams. It’s easy to customize, adapts to any design, and the build
+              size is tiny.”
             </p>
-          </div>
-        </figure>
-
-        <!-- PORTO -->
-        <figure class="gallery__item gallery__item--5">
-          <a href="https://github.com/abdmhamzah/h8ckaton-paladins" target="blank">
-            <div class="torow box">
-              <img src="./assets/img/wallet.png" class="" alt="kanban-app">
-              <div class="inset">
-                <p>Wallet App</p>
-                <div class="iconsp">
-                  <i class="fab fa-react iconp"></i>
-                  <i class="devicon-nodejs-plain iconp"></i>
-                  <i class="fab fa-html5 iconp"></i>
-                  <i class="fab fa-css3-alt iconp"></i>
-                  <i class="devicon-bootstrap-plain iconp"></i>
-                </div>
-              </div>
+          </blockquote>
+          <figcaption class="font-medium">
+            <div class="text-sky-500 dark:text-sky-400">Sarah Dayan</div>
+            <div class="text-slate-700 dark:text-slate-500">
+              Staff Engineer, Algolia
             </div>
-          </a>
-        </figure>
-        <figure class="gallery__item gallery__item--6">
-          <a href="https://orion-store-ecommerce.web.app/" target="blank">
-            <div class="torow box">
-              <img src="./assets/img/store.png" class="" alt="kanban-app">
-              <div class="inset">
-                <p>E-Commerce</p>
-                <div class="iconsp">
-                  <i class="fab fa-vuejs iconp"></i>
-                  <i class="devicon-express-original iconp"></i>
-                  <i class="devicon-postgresql-plain iconp"></i>
-                  <i class="devicon-sequelize-plain iconp"></i>
-                  <i class="devicon-heroku-original iconp"></i>
-                </div>
-              </div>
-            </div>
-          </a>
-        </figure>
-        <figure class="gallery__item gallery__item--7">
-          <a href="https://orion-kanban.web.app/" target="blank">
-            <div class="torow box">
-              <img src="./assets/img/kanban.png" class="" alt="kanban-app">
-              <div class="inset">
-                <p>Kanban App</p>
-                <div class="iconsp">
-                  <i class="fab fa-vuejs iconp"></i>
-                  <i class="devicon-express-original iconp"></i>
-                  <i class="devicon-postgresql-plain iconp"></i>
-                  <i class="devicon-sequelize-plain iconp"></i>
-                  <i class="fab fa-sass iconp"></i>
-                </div>
-              </div>
-            </div>
-          </a>
-        </figure>
-        <figure class="gallery__item gallery__item--8">
-          <a href="https://github.com/abdmhamzah/entertainme" target="blank">
-            <div class="torow box">
-              <img src="./assets/img/movie.png" class="" alt="kanban-app">
-              <div class="inset">
-                <p>Movie App</p>
-                <div class="iconsp">
-                  <i class="fab fa-react iconp"></i>
-                  <i class="devicon-express-original iconp"></i>
-                  <i class="devicon-mongodb-plain iconp"></i>
-                  <i class="devicon-redis-plain iconp"></i>
-                  <i class="devicon-bootstrap-plain iconp"></i>
-                </div>
-              </div>
-            </div>
-          </a>
-        </figure>
-        <figure class="gallery__item gallery__item--9">
-          <a href="https://pokpokepok-df2a7.web.app/" target="blank">
-            <div class="torow box">
-              <img src="./assets/img/pokemon.png" class="" alt="kanban-app">
-              <div class="inset">
-                <p>Pokemon Card</p>
-                <div class="iconsp">
-                  <i class="fab fa-react iconp"></i>
-                  <i class="devicon-nodejs-plain iconp"></i>
-                  <i class="fab fa-html5 iconp"></i>
-                  <i class="fab fa-css3-alt iconp"></i>
-                  <i class="devicon-bootstrap-plain iconp"></i>
-                </div>
-              </div>
-            </div>
-          </a>
-        </figure>
-        <figure class="gallery__item gallery__item--10">
-          <a href="https://orion-hub.herokuapp.com/" target="blank">
-            <div class="torow box">
-              <img src="./assets/img/hub.png" class="" alt="kanban-app">
-              <div class="inset">
-                <p>Student Hub</p>
-                <div class="iconsp">
-                  <i class="devicon-nodejs-plain iconp"></i>
-                  <i class="fab fa-html5 iconp"></i>
-                  <i class="fab fa-css3-alt iconp"></i>
-                  <i class="devicon-bootstrap-plain iconp"></i>
-                  <i class="devicon-heroku-original iconp"></i>
-                </div>
-              </div>
-            </div>
-          </a>
-        </figure>
-
-        <figure class="gallery__item gallery__item--11">
-          <div class="footer">
-            <p class="pfoot">Contact me</p>
-            <div class="icons">
-              <a href="https://www.linkedin.com/in/abdmhamzah/" target="blank">
-                <i class="fab fa-linkedin-in icon"></i>
-              </a>
-              <a href="https://github.com/abdmhamzah/" target="blank">
-                <i class="fab fa-github icon"></i>
-              </a>
-              <a href="https://instagram.com/abdmhamzah/" target="blank">
-                <i class="fab fa-instagram icon"></i>
-              </a>
-              <a
-                href="https://api.whatsapp.com/send?phone=6201313381118"
-                target="blank"
-              >
-                <i class="fab fa-whatsapp icon"></i>
-              </a>
-            </div>
-        </figure>
+          </figcaption>
+        </div>
+      </figure>
+    </div> -->
+    <div class="md:flex items-center lg:h-max md:h-max py-20">
+      <div class="flex-1 py-10 px-10">
+        <img
+          class="w-48 h-auto md:w-72 md:h-auto md:rounded-lg rounded-md mx-auto md:mr-0 lg:mr-0"
+          src="../assets/img/hamzah.jpg"
+          alt=""
+        />
       </div>
+      <div class="flex-1 px-16 lg:px-0 lg:mr-52 md:px-0 md:mr-24">
+        <p class="font-nunito text-primary md:text-8xl text-7xl">Hi,</p>
+        <p class="font-normal text-secondary">
+          I'm Hamzah, I could combine a Fullstack Developer logical thinking
+          process with a good taste of minimalist designer. Highly motivated,
+          honest, and have a strong creativity. A hard working person either
+          independently or in a team work.
+        </p>
+      </div>
+    </div>
+    <div class="flex justify-center mb-10">
+      <div class="flex-1 text-center">
+        <p class="text-secondary font-nunito text-2xl">Expertise</p>
+      </div>
+    </div>
+    <div class="items-center lg:h-max md:h-max lg:mx-48 mx-20 mb-20">
+      <div class="grid gap-10 lg:grid-cols-10 md:grid-cols-5 grid-cols-4">
+        <div
+          class="flex-1 text-center text-3xl text-primary hover:text-[#ffd700]"
+        >
+          <i class="devicon-javascript-plain"></i>
+        </div>
+        <div
+          class="flex-1 text-center text-3xl text-primary hover:text-[#007ACC]"
+        >
+          <i class="devicon-typescript-plain"></i>
+        </div>
+        <div
+          class="flex-1 text-center text-3xl text-primary hover:text-[#00A8E1]"
+        >
+          <i class="devicon-dart-plain"></i>
+        </div>
+        <div
+          class="flex-1 text-center text-3xl text-primary hover:text-[#79c043]"
+        >
+          <i class="devicon-nodejs-plain"></i>
+        </div>
+        <div
+          class="flex-1 text-center text-3xl text-primary hover:text-[#000000]"
+        >
+          <i class="devicon-express-original"></i>
+        </div>
+        <div
+          class="flex-1 text-center text-3xl text-primary hover:text-[#3e688e]"
+        >
+          <i class="devicon-postgresql-plain"></i>
+        </div>
+        <div
+          class="flex-1 text-center text-3xl text-primary hover:text-[#2c416e]"
+        >
+          <i class="devicon-sequelize-plain"></i>
+        </div>
+        <div
+          class="flex-1 text-center text-3xl text-primary hover:text-[#57a62e]"
+        >
+          <i class="devicon-mongodb-plain"></i>
+        </div>
+        <div
+          class="flex-1 text-center text-3xl text-primary hover:text-[#eb0002]"
+        >
+          <i class="devicon-redis-plain"></i>
+        </div>
+        <div
+          class="flex-1 text-center text-3xl text-primary hover:text-[#ff3e1e]"
+        >
+          <i class="devicon-git-plain"></i>
+        </div>
+        <div
+          class="flex-1 text-center text-3xl text-primary hover:text-[#e15211]"
+        >
+          <i class="fab fa-html5"></i>
+        </div>
+        <div
+          class="flex-1 text-center text-3xl text-primary hover:text-[#2a98d8]"
+        >
+          <i class="fab fa-css3-alt"></i>
+        </div>
+        <div
+          class="flex-1 text-center text-3xl text-primary hover:text-[#00bc7e]"
+        >
+          <i class="fab fa-vuejs"></i>
+        </div>
+        <div
+          class="flex-1 text-center text-3xl text-primary hover:text-[#00ddff]"
+        >
+          <i class="fab fa-react"></i>
+        </div>
+        <div
+          class="flex-1 text-center text-3xl text-primary hover:text-[#f901af]"
+        >
+          <i class="fab fa-sass"></i>
+        </div>
+        <div
+          class="flex-1 text-center text-3xl text-primary hover:text-[#006ab4]"
+        >
+          <i class="devicon-jquery-plain"></i>
+        </div>
+        <div
+          class="flex-1 text-center text-3xl text-primary hover:text-[#5b3b80]"
+        >
+          <i class="devicon-bootstrap-plain"></i>
+        </div>
+        <div
+          class="flex-1 text-center text-3xl text-primary hover:text-[#8652c9]"
+        >
+          <i class="devicon-heroku-original"></i>
+        </div>
+        <div
+          class="flex-1 text-center text-3xl text-primary hover:text-[#00A8E1]"
+        >
+          <i class="devicon-flutter-plain"></i>
+        </div>
+        <div
+          class="flex-1 text-center text-3xl text-primary hover:text-[#38B2AC]"
+        >
+          <i class="devicon-tailwindcss-plain"></i>
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-center mb-10">
+      <div class="flex-1 text-center">
+        <p class="text-secondary font-nunito text-2xl">Experiences</p>
+      </div>
+    </div>
+    <div class="flex items-center lg:h-max md:h-max mb-10 lg:mx-48 mx-20">
+      <ol class="relative border-l border-gray-200">
+        <li class="mb-10 ml-6">
+          <span
+            class="flex absolute -left-3 justify-center items-center w-6 h-6 bg-primary rounded-full ring-8 ring-white"
+          >
+            <svg
+              class="w-3 h-3 text-secondary"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </span>
+          <h3
+            class="flex items-center mb-1 text-lg font-semibold text-secondary"
+          >
+            DKatalis
+            <span
+              class="bg-primary text-secondary text-sm font-medium mr-2 px-2.5 py-0.5 rounded ml-3"
+              >Latest
+            </span>
+          </h3>
+          <time
+            class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+            >Contributed since June 13th, 2021</time
+          >
+          <p
+            class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400"
+          >
+            Participated to build Jago App using clean code architecture.
+            Working with Flutter to build mobile app, and Typescript to create
+            microservices.
+          </p>
+          <!-- <div>
+            <ul class="list-decimal ml-10">
+              <li>
+                Get access to over 20+ pages including a dashboard layout,
+                charts, kanban board, calendar, and pre-order E-commerce &
+                Marketing pages.
+              </li>
+              <li>
+                Get access to over 20+ pages including a dashboard layout,
+                charts, kanban board, calendar, and pre-order E-commerce &
+                Marketing pages.
+              </li>
+              <li>
+                Get access to over 20+ pages including a dashboard layout,
+                charts, kanban board, calendar, and pre-order E-commerce &
+                Marketing pages.
+              </li>
+            </ul>
+          </div> -->
+        </li>
+        <li class="mb-10 ml-6">
+          <span
+            class="flex absolute -left-3 justify-center items-center w-6 h-6 bg-primary rounded-full ring-8 ring-white"
+          >
+            <svg
+              class="w-3 h-3 text-secondary"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </span>
+          <h3 class="mb-1 text-lg font-semibold text-secondary">Rubixovt</h3>
+          <time
+            class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+            >Contributed from July 7th, 2019 - December 24th, 2019</time
+          >
+          <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+            Developed client's website based application using React and mobile
+            application using Flutter.
+          </p>
+        </li>
+        <!-- <li class="mb-10 ml-6">
+          <span
+            class="flex absolute -left-3 justify-center items-center w-6 h-6 bg-primary rounded-full ring-8 ring-white"
+          >
+            <svg
+              class="w-3 h-3 text-secondary"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </span>
+          <h3 class="mb-1 text-lg font-semibold text-secondary">
+            Flowbite Library v1.2.2
+          </h3>
+          <time
+            class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+            >Released on December 2nd, 2021</time
+          >
+          <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+            Get started with dozens of web components and interactive elements
+            built on top of Tailwind CSS.
+          </p>
+        </li> -->
+      </ol>
+    </div>
+    <div class="flex justify-center mb-10">
+      <div class="flex-1 text-center">
+        <p class="text-secondary font-nunito text-2xl">Contacts</p>
+      </div>
+    </div>
+    <div
+      class="items-center justify-center mx-auto lg:h-max md:h-max mb-20 lg:w-1/3 md:w-1/3 w-1/2"
+    >
+      <div class="grid gap-0 grid-cols-4">
+        <div
+          class="flex-1 text-center text-3xl text-primary hover:text-[#0078bc]"
+        >
+          <a href="https://www.linkedin.com/in/abdmhamzah/" target="blank">
+            <i class="fab fa-linkedin icon"></i>
+          </a>
+        </div>
+        <div
+          class="flex-1 text-center text-3xl text-primary hover:text-[#000000]"
+        >
+          <a href="https://github.com/abdmhamzah/" target="blank">
+            <i class="fab fa-github icon"></i>
+          </a>
+        </div>
+        <div
+          class="flex-1 text-center text-3xl text-primary hover:text-[#e21f99]"
+        >
+          <a href="https://instagram.com/abdmhamzah/" target="blank">
+            <i class="fab fa-instagram icon"></i>
+          </a>
+        </div>
+        <div
+          class="flex-1 text-center text-3xl text-primary hover:text-[#00A8E1]"
+        >
+          <a href="mailto:iamhamzaham@gmail.com" target="blank">
+            <i class="far fa-envelope"></i>
+          </a>
+        </div>
       </div>
     </div>
   </body>
