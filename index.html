@@ -210,8 +210,9 @@
           </h3>
           <time
             class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
-            >Contributed since June 13th, 2021</time
-          >
+            id="dkatalis"
+            >Contributed since June 13th, 2021 ·
+          </time>
           <p
             class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400"
           >
@@ -259,8 +260,9 @@
           <h3 class="mb-1 text-lg font-semibold text-secondary">Rubixovt</h3>
           <time
             class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
-            >Contributed from July 7th, 2019 - December 24th, 2019</time
-          >
+            id="rubixovt"
+            >Contributed from July 7th, 2019 - December 24th, 2019 ·
+          </time>
           <p class="text-base font-normal text-gray-500 dark:text-gray-400">
             Developed client's website based application using React and mobile
             application using Flutter.
@@ -336,5 +338,36 @@
         </div>
       </div>
     </div>
+    <script>
+      function getMonthDifference(startDate, endDate) {
+        let numberMonth =
+          endDate.getMonth() -
+          startDate.getMonth() +
+          12 * (endDate.getFullYear() - startDate.getFullYear());
+        let yearCount = Math.floor(numberMonth / 12);
+        let monthCount = numberMonth % 12;
+        if (yearCount > 0 && monthCount > 0) {
+          return `${yearCount} Years ${monthCount} Months`;
+        } else if (yearCount == 1 && monthCount > 0) {
+          return `${yearCount} Year ${monthCount} Months`;
+        } else if (yearCount < 1 && monthCount > 0) {
+          return `${monthCount} Months`;
+        } else if (yearCount == 1 && monthCount == 0) {
+          return `a Year`;
+        }
+        return `${yearCount} Years`;
+      }
+
+      let dkatalisgap = getMonthDifference(new Date("2021-06-13"), new Date());
+      var dkatalis = document.getElementById("dkatalis");
+      dkatalis.insertAdjacentHTML("beforeend", `<span>${dkatalisgap}</span>`);
+
+      let rubixovtgap = getMonthDifference(
+        new Date("2019-07-07"),
+        new Date("2019-12-24")
+      );
+      var rubixovt = document.getElementById("rubixovt");
+      rubixovt.insertAdjacentHTML("beforeend", `<span>${rubixovtgap}</span>`);
+    </script>
   </body>
 </html>
