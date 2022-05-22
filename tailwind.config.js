@@ -1,10 +1,37 @@
 module.exports = {
   content: ["**/*.{html,js}"],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
         primary: "#dcd8cd",
         secondary: "#6f7072",
+        dark_primary: "#86A5FF",
+        dark_secondary: "#07090F",
+        dark_third: "#A8BEFF",
+
+        javascript: "#ffd700",
+        typescript: "#007ACC",
+        dart: "#00A8E1",
+        nodejs: "#79c043",
+        express: "#000000",
+        postgresql: "#3e688e",
+        sequelize: "#2c416e",
+        mongodb: "#57a62e",
+        redis: "#eb0002",
+        git: "#ff3e1e",
+        html: "#e15211",
+        css: "#2a98d8",
+        vuejs: "#00bc7e",
+        react: "#00ddff",
+        sass: "#f901af",
+        jquery: "#006ab4",
+        bootstrap: "#5b3b80",
+        heroku: "#8652c9",
+        flutter: "#00A8E1",
+        tailwindcss: "#38B2AC",
+        linkedin: "#0078bc",
+        instagram: "#e21f99",
       },
       fontFamily: {
         nunito: ["Nunito Sans"],

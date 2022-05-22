@@ -19,7 +19,7 @@
     <link rel="icon" href="../assets/img/favicon.ico" />
     <title>abdmhamzah</title>
   </head>
-  <body>
+  <body class="dark:bg-dark_secondary">
     <!-- <div class="m-20">
       <figure
         class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800"
@@ -57,8 +57,14 @@
         />
       </div>
       <div class="flex-1 px-16 lg:px-0 lg:mr-52 md:px-0 md:mr-24">
-        <p class="font-nunito text-primary md:text-8xl text-7xl">Hi,</p>
-        <p class="font-normal text-secondary">
+        <a href="" onClick="return toggleTheme(event)">
+          <p
+            class="dark-toggle font-nunito text-primary md:text-8xl text-7xl dark:text-dark_primary"
+          >
+            Hi,
+          </p>
+        </a>
+        <p class="font-normal text-secondary dark:text-primary">
           I'm Hamzah, I could combine a Fullstack Developer logical thinking
           process with a good taste of minimalist designer. Highly motivated,
           honest, and have a strong creativity. A hard working person either
@@ -68,108 +74,110 @@
     </div>
     <div class="flex justify-center mb-10">
       <div class="flex-1 text-center">
-        <p class="text-secondary font-nunito text-2xl">Expertise</p>
+        <p class="text-secondary font-nunito text-2xl dark:text-primary">
+          Expertise
+        </p>
       </div>
     </div>
     <div class="items-center lg:h-max md:h-max lg:mx-48 mx-20 mb-20">
       <div class="grid gap-10 lg:grid-cols-10 md:grid-cols-5 grid-cols-4">
         <div
-          class="flex-1 text-center text-3xl text-primary hover:text-[#ffd700]"
+          class="flex-1 text-center text-3xl transition-transform transform hover:scale-125 text-primary dark:text-dark_third hover:text-javascript dark:hover:text-javascript"
         >
           <i class="devicon-javascript-plain"></i>
         </div>
         <div
-          class="flex-1 text-center text-3xl text-primary hover:text-[#007ACC]"
+          class="flex-1 text-center text-3xl transition-transform transform hover:scale-125 text-primary dark:text-dark_third hover:text-typescript dark:hover:text-typescript"
         >
           <i class="devicon-typescript-plain"></i>
         </div>
         <div
-          class="flex-1 text-center text-3xl text-primary hover:text-[#00A8E1]"
+          class="flex-1 text-center text-3xl transition-transform transform hover:scale-125 text-primary dark:text-dark_third hover:text-dart dark:hover:text-dart"
         >
           <i class="devicon-dart-plain"></i>
         </div>
         <div
-          class="flex-1 text-center text-3xl text-primary hover:text-[#79c043]"
+          class="flex-1 text-center text-3xl transition-transform transform hover:scale-125 text-primary dark:text-dark_third hover:text-nodejs dark:hover:text-nodejs"
         >
           <i class="devicon-nodejs-plain"></i>
         </div>
         <div
-          class="flex-1 text-center text-3xl text-primary hover:text-[#000000]"
+          class="flex-1 text-center text-3xl transition-transform transform hover:scale-125 text-primary dark:text-dark_third hover:text-express dark:hover:text-primary"
         >
           <i class="devicon-express-original"></i>
         </div>
         <div
-          class="flex-1 text-center text-3xl text-primary hover:text-[#3e688e]"
+          class="flex-1 text-center text-3xl transition-transform transform hover:scale-125 text-primary dark:text-dark_third hover:text-postgresql dark:hover:text-postgresql"
         >
           <i class="devicon-postgresql-plain"></i>
         </div>
         <div
-          class="flex-1 text-center text-3xl text-primary hover:text-[#2c416e]"
+          class="flex-1 text-center text-3xl transition-transform transform hover:scale-125 text-primary dark:text-dark_third hover:text-sequelize dark:hover:text-sequelize"
         >
           <i class="devicon-sequelize-plain"></i>
         </div>
         <div
-          class="flex-1 text-center text-3xl text-primary hover:text-[#57a62e]"
+          class="flex-1 text-center text-3xl transition-transform transform hover:scale-125 text-primary dark:text-dark_third hover:text-mongodb dark:hover:text-mongodb"
         >
           <i class="devicon-mongodb-plain"></i>
         </div>
         <div
-          class="flex-1 text-center text-3xl text-primary hover:text-[#eb0002]"
+          class="flex-1 text-center text-3xl transition-transform transform hover:scale-125 text-primary dark:text-dark_third hover:text-redis dark:hover:text-redis"
         >
           <i class="devicon-redis-plain"></i>
         </div>
         <div
-          class="flex-1 text-center text-3xl text-primary hover:text-[#ff3e1e]"
+          class="flex-1 text-center text-3xl transition-transform transform hover:scale-125 text-primary dark:text-dark_third hover:text-git dark:hover:text-git"
         >
           <i class="devicon-git-plain"></i>
         </div>
         <div
-          class="flex-1 text-center text-3xl text-primary hover:text-[#e15211]"
+          class="flex-1 text-center text-3xl transition-transform transform hover:scale-125 text-primary dark:text-dark_third hover:text-html dark:hover:text-html"
         >
           <i class="fab fa-html5"></i>
         </div>
         <div
-          class="flex-1 text-center text-3xl text-primary hover:text-[#2a98d8]"
+          class="flex-1 text-center text-3xl transition-transform transform hover:scale-125 text-primary dark:text-dark_third hover:text-css dark:hover:text-css"
         >
           <i class="fab fa-css3-alt"></i>
         </div>
         <div
-          class="flex-1 text-center text-3xl text-primary hover:text-[#00bc7e]"
+          class="flex-1 text-center text-3xl transition-transform transform hover:scale-125 text-primary dark:text-dark_third hover:text-vuejs dark:hover:text-vuejs"
         >
           <i class="fab fa-vuejs"></i>
         </div>
         <div
-          class="flex-1 text-center text-3xl text-primary hover:text-[#00ddff]"
+          class="flex-1 text-center text-3xl transition-transform transform hover:scale-125 text-primary dark:text-dark_third hover:text-react dark:hover:text-react"
         >
           <i class="fab fa-react"></i>
         </div>
         <div
-          class="flex-1 text-center text-3xl text-primary hover:text-[#f901af]"
+          class="flex-1 text-center text-3xl transition-transform transform hover:scale-125 text-primary dark:text-dark_third hover:text-sass dark:hover:text-sass"
         >
           <i class="fab fa-sass"></i>
         </div>
         <div
-          class="flex-1 text-center text-3xl text-primary hover:text-[#006ab4]"
+          class="flex-1 text-center text-3xl transition-transform transform hover:scale-125 text-primary dark:text-dark_third hover:text-jquery dark:hover:text-jquery"
         >
           <i class="devicon-jquery-plain"></i>
         </div>
         <div
-          class="flex-1 text-center text-3xl text-primary hover:text-[#5b3b80]"
+          class="flex-1 text-center text-3xl transition-transform transform hover:scale-125 text-primary dark:text-dark_third hover:text-bootstrap dark:hover:text-bootstrap"
         >
           <i class="devicon-bootstrap-plain"></i>
         </div>
         <div
-          class="flex-1 text-center text-3xl text-primary hover:text-[#8652c9]"
+          class="flex-1 text-center text-3xl transition-transform transform hover:scale-125 text-primary dark:text-dark_third hover:text-heroku dark:hover:text-heroku"
         >
           <i class="devicon-heroku-original"></i>
         </div>
         <div
-          class="flex-1 text-center text-3xl text-primary hover:text-[#00A8E1]"
+          class="flex-1 text-center text-3xl transition-transform transform hover:scale-125 text-primary dark:text-dark_third hover:text-flutter dark:hover:text-flutter"
         >
           <i class="devicon-flutter-plain"></i>
         </div>
         <div
-          class="flex-1 text-center text-3xl text-primary hover:text-[#38B2AC]"
+          class="flex-1 text-center text-3xl transition-transform transform hover:scale-125 text-primary dark:text-dark_third hover:text-tailwindcss dark:hover:text-tailwindcss"
         >
           <i class="devicon-tailwindcss-plain"></i>
         </div>
@@ -177,17 +185,19 @@
     </div>
     <div class="flex justify-center mb-10">
       <div class="flex-1 text-center">
-        <p class="text-secondary font-nunito text-2xl">Experiences</p>
+        <p class="text-secondary font-nunito text-2xl dark:text-primary">
+          Experiences
+        </p>
       </div>
     </div>
     <div class="flex items-center lg:h-max md:h-max mb-10 lg:mx-48 mx-20">
       <ol class="relative border-l border-gray-200">
         <li class="mb-10 ml-6">
           <span
-            class="flex absolute -left-3 justify-center items-center w-6 h-6 bg-primary rounded-full ring-8 ring-white"
+            class="flex absolute -left-3 justify-center items-center w-6 h-6 bg-primary rounded-full ring-8 ring-white dark:ring-dark_secondary dark:bg-dark_third"
           >
             <svg
-              class="w-3 h-3 text-secondary"
+              class="w-3 h-3 text-secondary dark:text-dark_secondary"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -200,22 +210,20 @@
             </svg>
           </span>
           <h3
-            class="flex items-center mb-1 text-lg font-semibold text-secondary"
+            class="flex items-center mb-1 text-lg font-semibold text-secondary dark:text-dark_third"
           >
             DKatalis
             <span
-              class="bg-primary text-secondary text-sm font-medium mr-2 px-2.5 py-0.5 rounded ml-3"
+              class="bg-primary text-secondary text-sm font-medium mr-2 px-2.5 py-0.5 rounded ml-3 dark:bg-dark_primary dark:text-dark_secondary"
               >Latest
             </span>
           </h3>
           <time
-            class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+            class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-dark_primary"
             id="dkatalis"
             >Contributed since June 13th, 2021 ·
           </time>
-          <p
-            class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400"
-          >
+          <p class="mb-4 text-base font-normal text-gray-500 dark:text-primary">
             Participated to build Jago App using clean code architecture.
             Working with Flutter to build mobile app, and Typescript to create
             microservices.
@@ -242,10 +250,10 @@
         </li>
         <li class="mb-10 ml-6">
           <span
-            class="flex absolute -left-3 justify-center items-center w-6 h-6 bg-primary rounded-full ring-8 ring-white"
+            class="flex absolute -left-3 justify-center items-center w-6 h-6 bg-primary rounded-full ring-8 ring-white dark:ring-dark_secondary dark:bg-dark_third"
           >
             <svg
-              class="w-3 h-3 text-secondary"
+              class="w-3 h-3 text-secondary dark:text-dark_secondary"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -257,13 +265,17 @@
               ></path>
             </svg>
           </span>
-          <h3 class="mb-1 text-lg font-semibold text-secondary">Rubixovt</h3>
+          <h3
+            class="flex items-center mb-1 text-lg font-semibold text-secondary dark:text-dark_third"
+          >
+            Rubixovt
+          </h3>
           <time
-            class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+            class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-dark_primary"
             id="rubixovt"
             >Contributed from July 7th, 2019 - December 24th, 2019 ·
           </time>
-          <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+          <p class="mb-4 text-base font-normal text-gray-500 dark:text-primary">
             Developed client's website based application using React and mobile
             application using Flutter.
           </p>
@@ -301,7 +313,9 @@
     </div>
     <div class="flex justify-center mb-10">
       <div class="flex-1 text-center">
-        <p class="text-secondary font-nunito text-2xl">Contacts</p>
+        <p class="text-secondary font-nunito text-2xl dark:text-primary">
+          Contacts
+        </p>
       </div>
     </div>
     <div
@@ -309,65 +323,35 @@
     >
       <div class="grid gap-0 grid-cols-4">
         <div
-          class="flex-1 text-center text-3xl text-primary hover:text-[#0078bc]"
+          class="flex-1 text-center text-3xl text-primary dark:text-dark_third hover:text-linkedin dark:hover:text-linkedin transition-transform transform hover:scale-125"
         >
           <a href="https://www.linkedin.com/in/abdmhamzah/" target="blank">
             <i class="fab fa-linkedin icon"></i>
           </a>
         </div>
         <div
-          class="flex-1 text-center text-3xl text-primary hover:text-[#000000]"
+          class="flex-1 text-center text-3xl text-primary dark:text-dark_third hover:text-express dark:hover:text-heroku transition-transform transform hover:scale-125"
         >
           <a href="https://github.com/abdmhamzah/" target="blank">
             <i class="fab fa-github icon"></i>
           </a>
         </div>
         <div
-          class="flex-1 text-center text-3xl text-primary hover:text-[#e21f99]"
+          class="flex-1 text-center text-3xl text-primary dark:text-dark_third hover:text-instagram dark:hover:text-instagram transition-transform transform hover:scale-125"
         >
           <a href="https://instagram.com/abdmhamzah/" target="blank">
             <i class="fab fa-instagram icon"></i>
           </a>
         </div>
         <div
-          class="flex-1 text-center text-3xl text-primary hover:text-[#00A8E1]"
+          class="flex-1 text-center text-3xl text-primary dark:text-dark_third hover:text-dart dark:hover:text-dart transition-transform transform hover:scale-125"
         >
           <a href="mailto:iamhamzaham@gmail.com" target="blank">
-            <i class="far fa-envelope"></i>
+            <i class="fa fa-envelope-square" aria-hidden="true"></i>
           </a>
         </div>
       </div>
     </div>
-    <script>
-      function getMonthDifference(startDate, endDate) {
-        let numberMonth =
-          endDate.getMonth() -
-          startDate.getMonth() +
-          12 * (endDate.getFullYear() - startDate.getFullYear());
-        let yearCount = Math.floor(numberMonth / 12);
-        let monthCount = numberMonth % 12;
-        if (yearCount > 0 && monthCount > 0) {
-          return `${yearCount} Years ${monthCount} Months`;
-        } else if (yearCount == 1 && monthCount > 0) {
-          return `${yearCount} Year ${monthCount} Months`;
-        } else if (yearCount < 1 && monthCount > 0) {
-          return `${monthCount} Months`;
-        } else if (yearCount == 1 && monthCount == 0) {
-          return `a Year`;
-        }
-        return `${yearCount} Years`;
-      }
-
-      let dkatalisgap = getMonthDifference(new Date("2021-06-13"), new Date());
-      var dkatalis = document.getElementById("dkatalis");
-      dkatalis.insertAdjacentHTML("beforeend", `<span>${dkatalisgap}</span>`);
-
-      let rubixovtgap = getMonthDifference(
-        new Date("2019-07-07"),
-        new Date("2019-12-24")
-      );
-      var rubixovt = document.getElementById("rubixovt");
-      rubixovt.insertAdjacentHTML("beforeend", `<span>${rubixovtgap}</span>`);
-    </script>
+    <script src="app.js"></script>
   </body>
 </html>

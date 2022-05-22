@@ -2017,6 +2017,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   -webkit-backdrop-filter: none;
           backdrop-filter: none;
 }
+.transition-transform{
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
 .transition{
   transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -2054,90 +2059,99 @@ Ensure the default browser behavior of the `hidden` attribute.
 .\[content\:\"hello\"\]{
   content: "hello";
 }
+.hover\:scale-125:hover{
+  --tw-scale-x: 1.25;
+  --tw-scale-y: 1.25;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
 .hover\:font-bold:hover{
   font-weight: 700;
 }
-.hover\:text-\[\#ffd700\]:hover{
+.hover\:text-javascript:hover{
   --tw-text-opacity: 1;
   color: rgb(255 215 0 / var(--tw-text-opacity));
 }
-.hover\:text-\[\#007ACC\]:hover{
+.hover\:text-typescript:hover{
   --tw-text-opacity: 1;
   color: rgb(0 122 204 / var(--tw-text-opacity));
 }
-.hover\:text-\[\#00A8E1\]:hover{
+.hover\:text-dart:hover{
   --tw-text-opacity: 1;
   color: rgb(0 168 225 / var(--tw-text-opacity));
 }
-.hover\:text-\[\#79c043\]:hover{
+.hover\:text-nodejs:hover{
   --tw-text-opacity: 1;
   color: rgb(121 192 67 / var(--tw-text-opacity));
 }
-.hover\:text-\[\#000000\]:hover{
+.hover\:text-express:hover{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
-.hover\:text-\[\#3e688e\]:hover{
+.hover\:text-postgresql:hover{
   --tw-text-opacity: 1;
   color: rgb(62 104 142 / var(--tw-text-opacity));
 }
-.hover\:text-\[\#2c416e\]:hover{
+.hover\:text-sequelize:hover{
   --tw-text-opacity: 1;
   color: rgb(44 65 110 / var(--tw-text-opacity));
 }
-.hover\:text-\[\#57a62e\]:hover{
+.hover\:text-mongodb:hover{
   --tw-text-opacity: 1;
   color: rgb(87 166 46 / var(--tw-text-opacity));
 }
-.hover\:text-\[\#eb0002\]:hover{
+.hover\:text-redis:hover{
   --tw-text-opacity: 1;
   color: rgb(235 0 2 / var(--tw-text-opacity));
 }
-.hover\:text-\[\#ff3e1e\]:hover{
+.hover\:text-git:hover{
   --tw-text-opacity: 1;
   color: rgb(255 62 30 / var(--tw-text-opacity));
 }
-.hover\:text-\[\#e15211\]:hover{
+.hover\:text-html:hover{
   --tw-text-opacity: 1;
   color: rgb(225 82 17 / var(--tw-text-opacity));
 }
-.hover\:text-\[\#2a98d8\]:hover{
+.hover\:text-css:hover{
   --tw-text-opacity: 1;
   color: rgb(42 152 216 / var(--tw-text-opacity));
 }
-.hover\:text-\[\#00bc7e\]:hover{
+.hover\:text-vuejs:hover{
   --tw-text-opacity: 1;
   color: rgb(0 188 126 / var(--tw-text-opacity));
 }
-.hover\:text-\[\#00ddff\]:hover{
+.hover\:text-react:hover{
   --tw-text-opacity: 1;
   color: rgb(0 221 255 / var(--tw-text-opacity));
 }
-.hover\:text-\[\#f901af\]:hover{
+.hover\:text-sass:hover{
   --tw-text-opacity: 1;
   color: rgb(249 1 175 / var(--tw-text-opacity));
 }
-.hover\:text-\[\#006ab4\]:hover{
+.hover\:text-jquery:hover{
   --tw-text-opacity: 1;
   color: rgb(0 106 180 / var(--tw-text-opacity));
 }
-.hover\:text-\[\#5b3b80\]:hover{
+.hover\:text-bootstrap:hover{
   --tw-text-opacity: 1;
   color: rgb(91 59 128 / var(--tw-text-opacity));
 }
-.hover\:text-\[\#8652c9\]:hover{
+.hover\:text-heroku:hover{
   --tw-text-opacity: 1;
   color: rgb(134 82 201 / var(--tw-text-opacity));
 }
-.hover\:text-\[\#38B2AC\]:hover{
+.hover\:text-flutter:hover{
+  --tw-text-opacity: 1;
+  color: rgb(0 168 225 / var(--tw-text-opacity));
+}
+.hover\:text-tailwindcss:hover{
   --tw-text-opacity: 1;
   color: rgb(56 178 172 / var(--tw-text-opacity));
 }
-.hover\:text-\[\#0078bc\]:hover{
+.hover\:text-linkedin:hover{
   --tw-text-opacity: 1;
   color: rgb(0 120 188 / var(--tw-text-opacity));
 }
-.hover\:text-\[\#e21f99\]:hover{
+.hover\:text-instagram:hover{
   --tw-text-opacity: 1;
   color: rgb(226 31 153 / var(--tw-text-opacity));
 }
@@ -2155,32 +2169,145 @@ Ensure the default browser behavior of the `hidden` attribute.
 .focus\:hover\:text-center:hover:focus{
   text-align: center;
 }
-@media (prefers-color-scheme: dark){
-
-  .dark\:bg-slate-800{
-    --tw-bg-opacity: 1;
-    background-color: rgb(30 41 59 / var(--tw-bg-opacity));
-  }
-
-  .dark\:text-sky-400{
-    --tw-text-opacity: 1;
-    color: rgb(56 189 248 / var(--tw-text-opacity));
-  }
-
-  .dark\:text-slate-500{
-    --tw-text-opacity: 1;
-    color: rgb(100 116 139 / var(--tw-text-opacity));
-  }
-
-  .dark\:text-gray-500{
-    --tw-text-opacity: 1;
-    color: rgb(107 114 128 / var(--tw-text-opacity));
-  }
-
-  .dark\:text-gray-400{
-    --tw-text-opacity: 1;
-    color: rgb(156 163 175 / var(--tw-text-opacity));
-  }
+.dark .dark\:bg-dark_secondary{
+  --tw-bg-opacity: 1;
+  background-color: rgb(7 9 15 / var(--tw-bg-opacity));
+}
+.dark .dark\:bg-slate-800{
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+}
+.dark .dark\:bg-dark_third{
+  --tw-bg-opacity: 1;
+  background-color: rgb(168 190 255 / var(--tw-bg-opacity));
+}
+.dark .dark\:bg-dark_primary{
+  --tw-bg-opacity: 1;
+  background-color: rgb(134 165 255 / var(--tw-bg-opacity));
+}
+.dark .dark\:text-sky-400{
+  --tw-text-opacity: 1;
+  color: rgb(56 189 248 / var(--tw-text-opacity));
+}
+.dark .dark\:text-slate-500{
+  --tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
+}
+.dark .dark\:text-dark_primary{
+  --tw-text-opacity: 1;
+  color: rgb(134 165 255 / var(--tw-text-opacity));
+}
+.dark .dark\:text-primary{
+  --tw-text-opacity: 1;
+  color: rgb(220 216 205 / var(--tw-text-opacity));
+}
+.dark .dark\:text-dark_third{
+  --tw-text-opacity: 1;
+  color: rgb(168 190 255 / var(--tw-text-opacity));
+}
+.dark .dark\:text-dark_secondary{
+  --tw-text-opacity: 1;
+  color: rgb(7 9 15 / var(--tw-text-opacity));
+}
+.dark .dark\:text-gray-500{
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+.dark .dark\:text-gray-400{
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+.dark .dark\:ring-dark_secondary{
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(7 9 15 / var(--tw-ring-opacity));
+}
+.dark .dark\:hover\:text-javascript:hover{
+  --tw-text-opacity: 1;
+  color: rgb(255 215 0 / var(--tw-text-opacity));
+}
+.dark .dark\:hover\:text-typescript:hover{
+  --tw-text-opacity: 1;
+  color: rgb(0 122 204 / var(--tw-text-opacity));
+}
+.dark .dark\:hover\:text-dart:hover{
+  --tw-text-opacity: 1;
+  color: rgb(0 168 225 / var(--tw-text-opacity));
+}
+.dark .dark\:hover\:text-nodejs:hover{
+  --tw-text-opacity: 1;
+  color: rgb(121 192 67 / var(--tw-text-opacity));
+}
+.dark .dark\:hover\:text-primary:hover{
+  --tw-text-opacity: 1;
+  color: rgb(220 216 205 / var(--tw-text-opacity));
+}
+.dark .dark\:hover\:text-postgresql:hover{
+  --tw-text-opacity: 1;
+  color: rgb(62 104 142 / var(--tw-text-opacity));
+}
+.dark .dark\:hover\:text-sequelize:hover{
+  --tw-text-opacity: 1;
+  color: rgb(44 65 110 / var(--tw-text-opacity));
+}
+.dark .dark\:hover\:text-mongodb:hover{
+  --tw-text-opacity: 1;
+  color: rgb(87 166 46 / var(--tw-text-opacity));
+}
+.dark .dark\:hover\:text-redis:hover{
+  --tw-text-opacity: 1;
+  color: rgb(235 0 2 / var(--tw-text-opacity));
+}
+.dark .dark\:hover\:text-git:hover{
+  --tw-text-opacity: 1;
+  color: rgb(255 62 30 / var(--tw-text-opacity));
+}
+.dark .dark\:hover\:text-html:hover{
+  --tw-text-opacity: 1;
+  color: rgb(225 82 17 / var(--tw-text-opacity));
+}
+.dark .dark\:hover\:text-css:hover{
+  --tw-text-opacity: 1;
+  color: rgb(42 152 216 / var(--tw-text-opacity));
+}
+.dark .dark\:hover\:text-vuejs:hover{
+  --tw-text-opacity: 1;
+  color: rgb(0 188 126 / var(--tw-text-opacity));
+}
+.dark .dark\:hover\:text-react:hover{
+  --tw-text-opacity: 1;
+  color: rgb(0 221 255 / var(--tw-text-opacity));
+}
+.dark .dark\:hover\:text-sass:hover{
+  --tw-text-opacity: 1;
+  color: rgb(249 1 175 / var(--tw-text-opacity));
+}
+.dark .dark\:hover\:text-jquery:hover{
+  --tw-text-opacity: 1;
+  color: rgb(0 106 180 / var(--tw-text-opacity));
+}
+.dark .dark\:hover\:text-bootstrap:hover{
+  --tw-text-opacity: 1;
+  color: rgb(91 59 128 / var(--tw-text-opacity));
+}
+.dark .dark\:hover\:text-heroku:hover{
+  --tw-text-opacity: 1;
+  color: rgb(134 82 201 / var(--tw-text-opacity));
+}
+.dark .dark\:hover\:text-flutter:hover{
+  --tw-text-opacity: 1;
+  color: rgb(0 168 225 / var(--tw-text-opacity));
+}
+.dark .dark\:hover\:text-tailwindcss:hover{
+  --tw-text-opacity: 1;
+  color: rgb(56 178 172 / var(--tw-text-opacity));
+}
+.dark .dark\:hover\:text-linkedin:hover{
+  --tw-text-opacity: 1;
+  color: rgb(0 120 188 / var(--tw-text-opacity));
+}
+.dark .dark\:hover\:text-instagram:hover{
+  --tw-text-opacity: 1;
+  color: rgb(226 31 153 / var(--tw-text-opacity));
 }
 @media (min-width: 640px){
 
@@ -2331,13 +2458,8 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-left: 0px;
     padding-right: 0px;
   }
-}
-@media (prefers-color-scheme: dark){
 
-  @media (min-width: 1024px){
-
-    .dark\:lg\:hover\:\[paint-order\:markers\]:hover{
-      paint-order: markers;
-    }
+  .dark .dark\:lg\:hover\:\[paint-order\:markers\]:hover{
+    paint-order: markers;
   }
 }
