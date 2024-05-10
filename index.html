@@ -20,34 +20,6 @@
     <title>abdmhamzah</title>
   </head>
   <body class="dark:bg-dark_secondary">
-    <!-- <div class="m-20">
-      <figure
-        class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800"
-      >
-        <img
-          class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto"
-          src="../assets/img/hamzah.jpg"
-          alt=""
-          width="384"
-          height="512"
-        />
-        <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
-          <blockquote>
-            <p class="text-lg text-white font-medium">
-              “Tailwind CSS is the only framework that I've seen scale on large
-              teams. It’s easy to customize, adapts to any design, and the build
-              size is tiny.”
-            </p>
-          </blockquote>
-          <figcaption class="font-medium">
-            <div class="text-sky-500 dark:text-sky-400">Sarah Dayan</div>
-            <div class="text-slate-700 dark:text-slate-500">
-              Staff Engineer, Algolia
-            </div>
-          </figcaption>
-        </div>
-      </figure>
-    </div> -->
     <div class="md:flex items-center lg:h-max md:h-max py-20">
       <div class="flex-1 py-10 px-10">
         <img
@@ -65,11 +37,12 @@
           </p>
         </a>
         <p class="font-normal text-secondary dark:text-primary">
-          I'm Hamzah, Enthusiastic and collaborative person with a passion 
-          for engaging in vibrant discussions and fostering a collaborative environment 
-          to explore and innovate new ideas. A lifelong learner driven by an insatiable curiosity 
-          and a commitment to continuous self-improvement. Skilled in championing minimalist design principles 
-          for websites and applications, blending creativity with functionality 
+          I'm Hamzah, Enthusiastic and collaborative person with a passion for
+          engaging in vibrant discussions and fostering a collaborative
+          environment to explore and innovate new ideas. A lifelong learner
+          driven by an insatiable curiosity and a commitment to continuous
+          self-improvement. Skilled in championing minimalist design principles
+          for websites and applications, blending creativity with functionality
           to create streamlined and user-centric digital experiences..
         </p>
       </div>
@@ -353,80 +326,7 @@
         </div>
       </div>
     </div>
-    <script>
-      /**
-       * DARK MODE TOGGLE
-       */
-
-      // Theme Vars
-      const userTheme = localStorage.getItem("theme");
-      const systemTheme = window.matchMedia(
-        "(prefers-color-scheme: dark)"
-      ).matches;
-
-      // Initial Theme Check
-      const themeCheck = () => {
-        if (userTheme === "dark" || (!userTheme && systemTheme)) {
-          document.documentElement.classList.add("dark");
-          return;
-        }
-      };
-
-      // Manual Theme Switch
-      const themeSwitch = () => {
-        if (document.documentElement.classList.contains("dark")) {
-          document.documentElement.classList.remove("dark");
-          localStorage.setItem("theme", "light");
-          return;
-        }
-        document.documentElement.classList.add("dark");
-        localStorage.setItem("theme", "dark");
-        return;
-      };
-
-      // call theme switch on clicking button
-      const toggleTheme = (event) => {
-        event.preventDefault();
-        themeSwitch();
-      };
-
-      // invoke theme check on initial load
-      themeCheck();
-
-      /**
-       * EXPERIENCES SECTION
-       */
-      function getMonthDifference(startDate, endDate) {
-        let numberMonth =
-          endDate.getMonth() -
-          startDate.getMonth() +
-          12 * (endDate.getFullYear() - startDate.getFullYear());
-        let yearCount = Math.floor(numberMonth / 12);
-        let monthCount = numberMonth % 12;
-        if (yearCount > 0 && monthCount > 0) {
-          return `${yearCount} Years ${monthCount} Months`;
-        } else if (yearCount == 1 && monthCount > 0) {
-          return `${yearCount} Year ${monthCount} Months`;
-        } else if (yearCount < 1 && monthCount > 0) {
-          return `${monthCount} Months`;
-        } else if (yearCount == 1 && monthCount == 0) {
-          return `a Year`;
-        }
-        return `${yearCount} Years`;
-      }
-
-      // DK
-      let dkatalisgap = getMonthDifference(new Date("2021-06-13"), new Date());
-      var dkatalis = document.getElementById("dkatalis");
-      dkatalis.insertAdjacentHTML("beforeend", `<span>${dkatalisgap}</span>`);
-
-      // RB
-      let rubixovtgap = getMonthDifference(
-        new Date("2019-07-07"),
-        new Date("2019-12-24")
-      );
-      var rubixovt = document.getElementById("rubixovt");
-      rubixovt.insertAdjacentHTML("beforeend", `<span>${rubixovtgap}</span>`);
-    </script>
+    <script src="./assets/js/theme-check.js" type="text/javascript"></script>
+    <script src="./assets/js/month-diff.js" type="text/javascript"></script>
   </body>
 </html>
